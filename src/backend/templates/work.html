@@ -190,11 +190,11 @@ $(function() {
 			<div class="agileits_w3three_nav">
 				<div class="agileits_w3three_nav_left">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="active"><a href="work.html">Our Work</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li class="active"><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'services' %}">Services</a></li>
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'work' %}">Our Work</a></li>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="agileits_w3three_nav_right">

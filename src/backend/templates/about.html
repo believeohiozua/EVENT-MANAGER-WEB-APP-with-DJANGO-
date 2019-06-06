@@ -3,50 +3,7 @@
 {% load crispy_forms_tags %}
 {% block content  %}
 <body>
-<!-- banner -->
-	<div class="banner1">
-		<div class="container">
-			<!-- header -->
-			<div class="w3_agile_menu">
-				<div class="agileits_w3layouts_nav">
-					<div id="toggle_m_nav">
-						<div id="m_nav_menu" class="m_nav">
-							<div class="m_nav_ham w3_agileits_ham" id="m_ham_1"></div>
-							<div class="m_nav_ham" id="m_ham_2"></div>
-							<div class="m_nav_ham" id="m_ham_3"></div>
-						</div>
-					</div>
-					<div id="m_nav_container" class="m_nav wthree_bg">
-						<nav class="menu menu--sebastian">
-							<ul id="m_nav_list" class="m_nav menu__list">
-								<li class="m_nav_item" id="m_nav_item_1"> <a href="index.html" class="link link--kumya"><i class="fa fa-home" aria-hidden="true"></i><span data-letters="Home">Home</span></a></li>
-								<li class="m_nav_item" id="moble_nav_item_2"> <a href="services.html" class="link link--kumya"><i class="fa fa-cog" aria-hidden="true"></i><span data-letters="Services">Services</span></a></li>
-								<li class="m_nav_item active" id="moble_nav_item_3"> <a href="about.html" class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="About Us">About Us</span></a></li>
-								<li class="m_nav_item" id="moble_nav_item_4"> <a href="work.html" class="link link--kumya"><i class="fa fa-building-o" aria-hidden="true"></i><span data-letters="Our Work">Our Work</span></a></li>
-								<li class="m_nav_item" id="moble_nav_item_6"> <a href="contact.html" class="link link--kumya"><i class="fa fa-envelope-o" aria-hidden="true"></i><span data-letters="Contact Us">Contact Us</span></a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="header">
-				<div class="agileits_w3layouts_logo">
-					<h1><a href="index.html">Events Planning</a></h1>
-				</div>
-				<div class="agileinfo_social_icons">
-					<ul class="agileits_social_list">
-						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>	
-			<!-- //header -->
-		</div>
-	</div>
-<!-- //banner -->
+{% include 'base/banner.html'%}
 <!-- about -->
 	<div class="welcome">
 		<div class="container">
@@ -95,7 +52,7 @@
 	</div>
 <!-- //about -->
 <!-- skills -->
-	<script src="js/skill.bars.jquery.js"></script>
+	<script src="{% static 'js/skill.bars.jquery.js'%}"></script>
 	<script>
 		$(document).ready(function(){
 			
@@ -130,7 +87,7 @@
 				</div>
 				<section>
 					<div class="modal-body">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'images/5.jpg'%}" alt=" " class="img-responsive" />
 						<p>Ut enim ad minima veniam, quis nostrum 
 							exercitationem ullam corporis suscipit laboriosam, 
 							nisi ut aliquid ex ea commodi consequatur? Quis autem 
@@ -154,7 +111,7 @@
 			<div class="w3ls_news_grids w3_agileits_team_grids"> 
 				<div class="col-md-3 w3_agileits_team_grid"> 
 					<div class="w3layouts_news_grid">
-						<img src="images/t1.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'images/t1.jpg'%}" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
 							<div class="wthree_text agileinfo_about_text">
 								<ul class="agileits_social_list">
@@ -170,7 +127,7 @@
 				</div>
 				<div class="col-md-3 w3_agileits_team_grid"> 
 					<div class="w3layouts_news_grid">
-						<img src="images/t3.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'images/t3.jpg'%}" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
 							<div class="wthree_text agileinfo_about_text">
 								<ul class="agileits_social_list">
@@ -186,7 +143,7 @@
 				</div>
 				<div class="col-md-3 w3_agileits_team_grid"> 
 					<div class="w3layouts_news_grid">
-						<img src="images/t4.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'images/t4.jpg'%}" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
 							<div class="wthree_text agileinfo_about_text">
 								<ul class="agileits_social_list">
@@ -202,7 +159,7 @@
 				</div>
 				<div class="col-md-3 w3_agileits_team_grid"> 
 					<div class="w3layouts_news_grid">
-						<img src="images/t2.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'images/t2.jpg'%}" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
 							<div class="wthree_text agileinfo_about_text">
 								<ul class="agileits_social_list">
@@ -233,11 +190,11 @@
 			<div class="agileits_w3three_nav">
 				<div class="agileits_w3three_nav_left">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li class="active"><a href="about.html">About</a></li>
-						<li><a href="work.html">Our Work</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li class="active"><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'services' %}">Services</a></li>
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'work' %}">Our Work</a></li>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="agileits_w3three_nav_right">
